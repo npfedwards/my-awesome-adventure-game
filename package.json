@@ -1,0 +1,14 @@
+{
+  "name": "text-adventure",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A text adventure game in TypeScript",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types --disable-warning=ExperimentalWarning  src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "@types/node": "^22.0.0"
+  }
+}

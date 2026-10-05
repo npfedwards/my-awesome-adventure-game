@@ -1,0 +1,34 @@
+{
+  "name": "Text Adventure (TypeScript)",
+
+  // Node 22 LTS. Pinned so every student gets the identical runtime.
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+
+  // Install dependencies when the codespace is built, so students can
+  // press Run straight away without typing `npm install`.
+  "postCreateCommand": "npm install",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        // Official TypeScript 7 language service (faster errors and completions).
+        "TypeScriptTeam.native-preview"
+      ],
+      "settings": {
+        // Use the workspace's TypeScript 7 rather than the editor's older
+        // bundled copy, so the squiggles match `npx tsc`.
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "typescript.enablePromptUseWorkspaceTsdk": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "files.autoSave": "afterDelay"
+      }
+    }
+  },
+
+  "postAttachCommand": "echo '\\n\\n  Type  npm start  to play your game.\\n\\n'",
+
+  "remoteUser": "node"
+}
