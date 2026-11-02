@@ -1,14 +1,6 @@
-import * as readline from "node:readline/promises";
+import {ask, askClose} from './actions/ask.ts';
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+console.log('Welcome to ');
 
-console.log('Hello World!');
-
-const input = await rl.question('What is your name? ');
-console.log('Hello ' + input + '!');
-
-rl.close();
+askClose();
 console.log('Thanks for playing!');

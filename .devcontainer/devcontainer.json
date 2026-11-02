@@ -27,8 +27,5 @@
       }
     }
   },
-
-  "postAttachCommand": "echo '\\n\\n  Type  npm start  to play your game.\\n\\n'",
-
   "remoteUser": "node"
 }
